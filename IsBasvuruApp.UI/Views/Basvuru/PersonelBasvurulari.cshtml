@@ -1,0 +1,66 @@
+﻿@using IsBasvuruApp.CORE.Entities
+@model List<PersonelBasvuru>
+
+@{
+    ViewData["Title"] = "Başvurular";
+}
+
+
+<a asp-action="Create" asp-route-personelID="@ViewBag.personelID" class="btn btn-primary">Yeni Başvuru</a>
+
+<div class="text-center">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Başvuru Tarihi</th>
+                <th>İli</th>
+                <th>Seyahat Engeli</th>
+                <th>İşyeri Adı</th>
+                <th>Pozisyon</th>
+                <th>Açıklama</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.BasvuruTarihi.ToString("dd-MM-yyyy") </td>
+                    <td>@item.Il.Adi</td>
+                    <td>@(item.SeyahatEngeliYok ? "Yok" : "Var")</td>
+                    <td>@item.IsyeriAdi</td>
+                    <td>@item.Pozisyon</td>
+                    <td>@item.Aciklama</td>
+                    <td>
+                        <a type="button" class="btn btn-sm btn-warning" asp-action="Edit" asp-route-basvuruID="@item.ID">Edit</a> |
+                        <form class="d-inline" asp-action="Delete" asp-controller="Basvuru">
+                            <input name="basvuruID" value="@item.ID" hidden />
+                            <input name="personelID" value="@ViewBag.personelID" hidden/>
+                            <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+                        </form>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

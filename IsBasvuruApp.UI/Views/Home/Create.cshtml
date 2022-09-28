@@ -1,0 +1,83 @@
+﻿@model IsBasvuruApp.CORE.Entities.Personel
+
+@{
+    string myTitle = Model == null ? "Yeni Personel" : "Personeli Düzenle";
+    ViewData["Title"] = myTitle;
+}
+
+<h1>@myTitle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                @ViewBag.Error
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        <form asp-action=@(Model == null ? "Create" : "Edit") method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label class="control-label">İsim Soyisim</label>
+                <input asp-for="AdiSoyadi" class="form-control" required/>
+                <span asp-validation-for="AdiSoyadi" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Şehir</label>
+                <select asp-for="IlID" class="form-control" asp-items="ViewBag.Iller" required></select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">İlçe<small style="color:skyblue;"> Önce İl Seçiniz.</small></label>
+                <select asp-for="IlceID" class="form-control" asp-items="ViewBag.Ilceler" required></select>
+            </div>
+
+            <div class="form-group">
+                <p class="control-label">Cinsiyet Seçin</p>
+                <div class="form-check form-check-inline">
+                    
+                    <input class="form-check-input" type="radio" asp-for="Cinsiyet" id="kadin" value="Kadın" checked>
+                    <label class="form-check-label" for="kadin">Kadın</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="Cinsiyet" id="erkek" value="Erkek">
+                    <label class="form-check-label" for="erkek">Erkek</label>
+                </div>
+
+                <span asp-validation-for="Cinsiyet" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DogumTarihi" class="control-label"></label>
+                <input asp-for="DogumTarihi" type="date" class="form-control" />
+                <span asp-validation-for="DogumTarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aciklama" class="control-label"></label>
+                <textarea asp-for="Aciklama" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@(Model == null ? "Oluştur" : "Düzenle") class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

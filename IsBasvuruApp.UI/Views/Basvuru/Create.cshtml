@@ -1,0 +1,75 @@
+﻿@model IsBasvuruApp.CORE.Entities.PersonelBasvuru
+
+@{
+    string myTitle = Model == null ? "Yeni Başvuru" : "Başvuru Düzenle";
+    ViewData["Title"] = myTitle;
+}
+
+<h1>@myTitle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+         @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                @ViewBag.Error
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        <form asp-controller="Basvuru" asp-action=@(Model == null ? "Create" : "Edit")>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="ID" hidden/>
+            <input asp-for="PersonelID" hidden/>
+
+            <div class="form-group">
+                <label asp-for="BasvuruTarihi" class="control-label">Başvuru Tarihi</label>
+                <input asp-for="BasvuruTarihi" type="date" class="form-control" />
+                <span asp-validation-for="BasvuruTarihi" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IlID" class="control-label">İl Seçin</label>
+                <select asp-for="IlID" class ="form-control" asp-items="ViewBag.Iller"></select>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SeyahatEngeliYok" /> Seyahat Engeli Yok
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IsyeriAdi" class="control-label">İşyeri Adı</label>
+                <input asp-for="IsyeriAdi" class="form-control" />
+                <span asp-validation-for="IsyeriAdi" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Pozisyon" class="control-label">Pozisyon</label>
+                <input asp-for="Pozisyon" class="form-control" />
+                <span asp-validation-for="Pozisyon" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Aciklama" class="control-label">Açıklama</label>
+                <textarea asp-for="Aciklama" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@(Model == null ? "Oluştur" : "Düzenle") class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Basvuru" asp-action="PersonelBasvurulari" asp-route-personelID="@(Model == null ? @ViewBag.personelID : Model.PersonelID)">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

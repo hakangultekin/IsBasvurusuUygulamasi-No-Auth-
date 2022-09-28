@@ -1,0 +1,14 @@
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\IsBasvuruApp.CORE.deps.json
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\IsBasvuruApp.CORE.runtimeconfig.json
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\IsBasvuruApp.CORE.runtimeconfig.dev.json
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\IsBasvuruApp.CORE.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\ref\IsBasvuruApp.CORE.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\bin\Debug\net5.0\IsBasvuruApp.CORE.pdb
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.AssemblyInfoInputs.cache
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.AssemblyInfo.cs
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.csproj.CoreCompileInputs.cache
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\ref\IsBasvuruApp.CORE.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.pdb
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.CORE\obj\Debug\net5.0\IsBasvuruApp.CORE.genruntimeconfig.cache

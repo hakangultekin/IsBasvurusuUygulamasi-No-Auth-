@@ -1,0 +1,15 @@
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\IsBasvuruApp.DAL.deps.json
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\IsBasvuruApp.DAL.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\ref\IsBasvuruApp.DAL.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\IsBasvuruApp.DAL.pdb
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\IsBasvuruApp.CORE.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\bin\Debug\net5.0\IsBasvuruApp.CORE.pdb
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.csproj.AssemblyReference.cache
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.AssemblyInfoInputs.cache
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.AssemblyInfo.cs
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.csproj.CopyComplete
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\ref\IsBasvuruApp.DAL.dll
+C:\Users\hakan\Desktop\Yazılım\Tasks\IsBasvuruApp\IsBasvuruApp.DAL\obj\Debug\net5.0\IsBasvuruApp.DAL.pdb

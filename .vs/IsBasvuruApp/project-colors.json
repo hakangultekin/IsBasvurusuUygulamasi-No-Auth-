@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fa3eac97-2e31-49ca-b208-fa6f8b8a36ce": {
+      "ProjectGuid": "fa3eac97-2e31-49ca-b208-fa6f8b8a36ce",
+      "DisplayName": "IsBasvuruApp.UI",
+      "ColorIndex": 0
+    },
+    "6ec86a11-213d-462c-8bbd-ca61ed16b652": {
+      "ProjectGuid": "6ec86a11-213d-462c-8bbd-ca61ed16b652",
+      "DisplayName": "IsBasvuruApp.DAL",
+      "ColorIndex": 1
+    },
+    "18dc5b2e-5b88-4163-a6e3-55103ec6b817": {
+      "ProjectGuid": "18dc5b2e-5b88-4163-a6e3-55103ec6b817",
+      "DisplayName": "IsBasvuruApp.BLL",
+      "ColorIndex": 2
+    },
+    "0dd78b61-3081-40f6-849a-c31cfccbedbc": {
+      "ProjectGuid": "0dd78b61-3081-40f6-849a-c31cfccbedbc",
+      "DisplayName": "IsBasvuruApp.CORE",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,64 @@
+﻿@using IsBasvuruApp.BLL.ViewModels
+@model List<PersonelListVM>
+
+@{
+    ViewData["Title"] = "Personeller";
+}
+
+
+<a asp-action="Create" class="btn btn-primary">Yeni Personel</a>
+
+<div class="text-center">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Adı Soyadı</th>
+                <th>İl</th>
+                <th> İlçe</th>
+                <th> Cinsiyet</th>
+                <th>Doğum Tarihi</th>
+                <th>Açıklama</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td><a asp-controller="Basvuru" asp-action="PersonelBasvurulari" asp-route-personelID="@item.ID">@item.AdiSoyadi</a></td>
+                    <td>@item.IlAdi</td>
+                    <td>@item.IlceAdi</td>
+                    <td>@item.Cinsiyet</td>
+                    <td>@item.DogumTarihi.ToString("dd-MM-yyyy") </td>
+                    <td>@item.Aciklama</td>
+                    <td>
+                        <a class="btn btn-sm btn-success" asp-controller="Basvuru" asp-action="PersonelBasvurulari" asp-route-personelID="@item.ID">Başvurularım</a> |
+                        <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
